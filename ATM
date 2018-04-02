@@ -1,0 +1,23 @@
+#include<iostream>
+#include<stdio.h>
+ 
+using namespace std;
+ 
+int main()
+{
+	int withdrawalWish;
+	float initialBalance;
+ 
+	cin >> withdrawalWish;
+	scanf("%f", &initialBalance);
+ 
+	if(withdrawalWish % 5 == 0 && withdrawalWish <= (initialBalance - .5))
+	{
+		initialBalance = initialBalance - withdrawalWish - .5;
+	}
+ 
+	printf("%.2f", initialBalance);
+ 
+	return 0;
+}
+ 
